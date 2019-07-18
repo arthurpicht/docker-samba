@@ -1,6 +1,6 @@
 ##  Repository
 
-Dockerfile and related resources for a samba docker image
+Dockerfile and related resources for samba docker image
 [arthurpicht/samba](https://hub.docker.com/r/arthurpicht/samba).
 
 Forked from [servercontainer/samba](https://hub.docker.com/r/servercontainers/samba).
@@ -43,3 +43,21 @@ Forked from [servercontainer/samba](https://hub.docker.com/r/servercontainers/sa
 
 See docker hub page of [servercontainer/samba] for information about further
 environment variables and configuration options.
+
+## Example docker call
+
+```
+docker run \
+        -d \
+        --rm \
+        --name samba \
+        -e ACCOUNT_smbuser=geheim \
+        -e UID_ACCOUNT_smbuser=1001 \
+        -e SAMBA_VOLUME_CONFIG_TEST="[test]; path=/shares/test; guest ok = no; read only = no; browsable = yes" \
+        --mount type=bind,source=/on/host/samba,target=/shares/test \
+        -p 139:139 \
+        -p 445:445 \
+        arthurpicht/samba
+```
+
+Target folder on host `/on/host/samba` needs file permissions for User-Id `1001` specified with UID_ACCOUNT_smbuser.
