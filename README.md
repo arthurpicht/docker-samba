@@ -41,7 +41,7 @@ Forked from [servercontainer/samba](https://hub.docker.com/r/servercontainers/sa
 
     default: *file server*
 
-See docker hub page of [servercontainer/samba] for information about further
+See docker hub page of [servercontainer/samba](https://hub.docker.com/r/servercontainers/samba) for information about further
 environment variables and configuration options.
 
 ## Example docker call
