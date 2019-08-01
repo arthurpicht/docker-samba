@@ -60,4 +60,4 @@ docker run \
         arthurpicht/samba
 ```
 
-Target folder on host `/on/host/samba` needs file permissions for User-Id `1001` specified with UID_ACCOUNT_smbuser.
+Target folder on host `/on/host/samba` needs file permissions for User-Id `1001` specified by UID_ACCOUNT_smbuser.
