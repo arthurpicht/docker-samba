@@ -1,4 +1,4 @@
-from arthurpicht/debian-9:0.1
+from arthurpicht/debian-10:latest
 
 ENV DOCKER_NAME="samba"
 
