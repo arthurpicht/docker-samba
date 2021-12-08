@@ -7,7 +7,7 @@ Forked from [servercontainer/samba](https://hub.docker.com/r/servercontainers/sa
 
 ## Changes and additions
 
-* Based on my [arthurpicht/debian-10](https://hub.docker.com/r/arthurpicht/debian-10) image.
+* Based on my [arthurpicht/debian-11](https://hub.docker.com/r/arthurpicht/debian-11) image.
 
 * SMB from official APT repository instead of building from scratch
 
