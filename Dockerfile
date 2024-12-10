@@ -17,7 +17,7 @@ COPY scripts /usr/local/bin/
 HEALTHCHECK CMD ["docker-healthcheck.sh"]
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD [ "bash", "-c", "smbd -FS -d 2 < /dev/null" ]
+CMD [ "bash", "-c", "smbd -F -d 2 < /dev/null" ]
 
 
 
